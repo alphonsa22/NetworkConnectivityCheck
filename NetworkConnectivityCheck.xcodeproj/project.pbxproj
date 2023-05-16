@@ -15,6 +15,7 @@
 		2EDAD2BE2A135F250030FA42 /* NetworkConnectivityCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD2BC2A135F250030FA42 /* NetworkConnectivityCheck.xcdatamodeld */; };
 		2EDAD2C02A135F280030FA42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAD2BF2A135F280030FA42 /* Assets.xcassets */; };
 		2EDAD2C32A135F280030FA42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAD2C12A135F280030FA42 /* LaunchScreen.storyboard */; };
+		2EDAD2CC2A1360EB0030FA42 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD2CB2A1360EB0030FA42 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2EDAD2BF2A135F280030FA42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDAD2C22A135F280030FA42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDAD2C42A135F280030FA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDAD2CB2A1360EB0030FA42 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		4EC50CC9A2EAF94230234DF9 /* Pods_NetworkConnectivityCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkConnectivityCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EFE26734DB0840540E59B8 /* Pods-NetworkConnectivityCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkConnectivityCheck.debug.xcconfig"; path = "Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		E3290EAB7B8901144FD27465 /* Pods-NetworkConnectivityCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkConnectivityCheck.release.xcconfig"; path = "Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				69EFE26734DB0840540E59B8 /* Pods-NetworkConnectivityCheck.debug.xcconfig */,
 				E3290EAB7B8901144FD27465 /* Pods-NetworkConnectivityCheck.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 		2EDAD2B22A135F250030FA42 /* NetworkConnectivityCheck */ = {
 			isa = PBXGroup;
 			children = (
+				2EDAD2CA2A1360CB0030FA42 /* NetWorkCheck */,
 				2EDAD2B32A135F250030FA42 /* AppDelegate.swift */,
 				2EDAD2B52A135F250030FA42 /* SceneDelegate.swift */,
 				2EDAD2B72A135F250030FA42 /* ViewController.swift */,
@@ -93,6 +95,14 @@
 				2EDAD2BC2A135F250030FA42 /* NetworkConnectivityCheck.xcdatamodeld */,
 			);
 			path = NetworkConnectivityCheck;
+			sourceTree = "<group>";
+		};
+		2EDAD2CA2A1360CB0030FA42 /* NetWorkCheck */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAD2CB2A1360EB0030FA42 /* NetworkMonitor.swift */,
+			);
+			path = NetWorkCheck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +222,7 @@
 			files = (
 				2EDAD2BE2A135F250030FA42 /* NetworkConnectivityCheck.xcdatamodeld in Sources */,
 				2EDAD2B82A135F250030FA42 /* ViewController.swift in Sources */,
+				2EDAD2CC2A1360EB0030FA42 /* NetworkMonitor.swift in Sources */,
 				2EDAD2B42A135F250030FA42 /* AppDelegate.swift in Sources */,
 				2EDAD2B62A135F250030FA42 /* SceneDelegate.swift in Sources */,
 			);
@@ -369,6 +380,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +410,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
