@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D62FD5A569CE0D95A2695C3 /* Pods_NetworkConnectivityCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC50CC9A2EAF94230234DF9 /* Pods_NetworkConnectivityCheck.framework */; };
 		2EDAD2B42A135F250030FA42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD2B32A135F250030FA42 /* AppDelegate.swift */; };
 		2EDAD2B62A135F250030FA42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD2B52A135F250030FA42 /* SceneDelegate.swift */; };
 		2EDAD2B82A135F250030FA42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAD2B72A135F250030FA42 /* ViewController.swift */; };
@@ -26,6 +27,9 @@
 		2EDAD2BF2A135F280030FA42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDAD2C22A135F280030FA42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDAD2C42A135F280030FA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC50CC9A2EAF94230234DF9 /* Pods_NetworkConnectivityCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkConnectivityCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69EFE26734DB0840540E59B8 /* Pods-NetworkConnectivityCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkConnectivityCheck.debug.xcconfig"; path = "Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		E3290EAB7B8901144FD27465 /* Pods-NetworkConnectivityCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkConnectivityCheck.release.xcconfig"; path = "Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D62FD5A569CE0D95A2695C3 /* Pods_NetworkConnectivityCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2181F21FB497F579E24D1B4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EC50CC9A2EAF94230234DF9 /* Pods_NetworkConnectivityCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22BD352D3CD745F92C86F62B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69EFE26734DB0840540E59B8 /* Pods-NetworkConnectivityCheck.debug.xcconfig */,
+				E3290EAB7B8901144FD27465 /* Pods-NetworkConnectivityCheck.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2EDAD2A72A135F250030FA42 = {
 			isa = PBXGroup;
 			children = (
 				2EDAD2B22A135F250030FA42 /* NetworkConnectivityCheck */,
 				2EDAD2B12A135F250030FA42 /* Products */,
+				22BD352D3CD745F92C86F62B /* Pods */,
+				2181F21FB497F579E24D1B4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EDAD2C72A135F280030FA42 /* Build configuration list for PBXNativeTarget "NetworkConnectivityCheck" */;
 			buildPhases = (
+				A15DA29C052CB827619004E6 /* [CP] Check Pods Manifest.lock */,
 				2EDAD2AC2A135F250030FA42 /* Sources */,
 				2EDAD2AD2A135F250030FA42 /* Frameworks */,
 				2EDAD2AE2A135F250030FA42 /* Resources */,
+				3F4E90FFBA621964C973BB3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F4E90FFBA621964C973BB3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkConnectivityCheck/Pods-NetworkConnectivityCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A15DA29C052CB827619004E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkConnectivityCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EDAD2AC2A135F250030FA42 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		2EDAD2C82A135F280030FA42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69EFE26734DB0840540E59B8 /* Pods-NetworkConnectivityCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		2EDAD2C92A135F280030FA42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3290EAB7B8901144FD27465 /* Pods-NetworkConnectivityCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
